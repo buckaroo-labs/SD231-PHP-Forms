@@ -13,7 +13,7 @@ Next, you will insert PHP code into `index.php` so that the form data you sent t
 5. Insert the text `<?php echo($_GET['fname']); ?>` into the HTML line `<input type="text" id="ifname" name="fname" value=""><br>` so that the following line is the result:
 `<input type="text" id="firstname" name="fname" value="<?php echo($_GET['fname']); ?>"><br>`
 
-PHP has a global string array called "$_GET" which stores all the name-value pairs sent in the request's query string. We coded our file to echo the value of the $_GET array indexed by the name `fname`. 
+PHP has a global string array called `$_GET` which stores all the name-value pairs sent in the request's query string. We coded our file to echo the value of the `$_GET` array indexed by the name `fname`. 
 
 7. Save your changes to the `index.php` file and refresh your browser.  
 8. Fill out both fields of the form and hit the "Submit" button again. Which of the two form fields remains populated when the response from the server comes back? Why?  

@@ -21,5 +21,5 @@ PHP has a global string array called "$_GET" which stores all the name-value pai
 
 The code that we added in Step 5 simply assumed that the value `$_GET['fname']` would be defined. This was not the case, resulting in an `Undefined array key` error.   
 
-10. Modify your PHP code so that $_GET['fname'] is only echoed if the variable is set.  
+10. Modify your PHP code so that `$_GET['fname']` is only echoed if the variable is set.  
 

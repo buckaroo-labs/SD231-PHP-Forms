@@ -20,6 +20,8 @@ PHP has a global string array called `$_GET` which stores all the name-value pai
 9. Remove the query-string portion of the URL in your browser's address bar (leaving only `http://localhost/index.php`, for example) and press enter. Do you see an error message?  
 
 The code that we added in Step 5 simply assumed that the value `$_GET['fname']` would be defined. This was not the case, resulting in an `Undefined array key` error.   
+Some errors cause a PHP page not to render, and in these cases a developer needs to examine the Apache error logs to find out what went wrong. AMPPS stores this log at 
+`C:\Program Files\Ampps\ampps\scripts\error_log.log` by default, but does not have logging turned on unless you tell it to. Go to `http://localhost/ampps-admin/index.php?act=settings` and adjust the "AMPPS Logs Level" setting until you see the log results you need.  
 
 10. Modify your PHP code so that `$_GET['fname']` is only echoed if the variable is set.  
 11. Modify your PHP code so that if `$_GET['fname']` set, a script element is echoed as well. This script element will contain JavaScript which changes the content of the paragraph element (with the "demo" ID) to a greeting that includes `$_GET['fname']`.  

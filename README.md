@@ -24,7 +24,7 @@ The code that we added in Step 5 simply assumed that the value `$_GET['fname']` 
 10. Modify your PHP code so that `$_GET['fname']` is only echoed if the variable is set.  
 11. Modify your PHP code so that if `$_GET['fname']` set, a script element is echoed as well. This script element will contain javascript which changes the content of the paragraph element (with the "demo" ID) to a greeting that includes `$_GET['fname']`.  
 
-Step #11 is going to be tricky. You are probably going to need to construct a string in PHP that contains quotation marks. PHP makes this relatively painless. If you need a string to contain double-quotation marks, you enclose it in single-quote marks, e.g.: `$string1='My name is "Ishmael."'; If you need a string to contain single-quote marks, vice versa, e.g.: `$SQLString="SELECT id FROM students WHERE fname='Ishmael'";  
+Step #11 is going to be tricky. You are probably going to need to construct a string in PHP that contains quotation marks. PHP makes this relatively painless. If you need a string to contain double-quotation marks, you enclose it in single-quote marks, e.g.: `$string1='My name is "Ishmael."'`; If you need a string to contain single-quote marks, vice versa, e.g.: `$SQLString="SELECT id FROM students WHERE fname='Ishmael'"`;  
 
 12. Submit your updated `index.php` file in Canvas.  
 

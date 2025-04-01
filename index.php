@@ -14,9 +14,9 @@
     Your assignment is to insert PHP into this file to process the form data.
 -->
 <form action="index.php">
-  <label for="fname">First name:</label><br>
+  <label for="firstname">First name:</label><br>
   <input type="text" id="firstname" name="fname" value=""><br>
-  <label for="lname">Last name:</label><br>
+  <label for="lastname">Last name:</label><br>
   <input type="text" id="lastname" name="lname" value=""><br><br>
   <input type="submit" value="Submit">
 </form> 

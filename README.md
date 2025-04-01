@@ -11,7 +11,15 @@ When you clicked the form's submit button, your browser formed an HTTP request U
 Next, you will insert PHP code into `index.php` so that the form data you sent to the server with your request will appear as part of the server's response.
 
 5. Insert the text `<?php echo($_GET['fname']); ?>` into the HTML line `<input type="text" id="ifname" name="fname" value=""><br>` so that the following line is the result:
-`<input type="text" id="ifname" name="fname" value="<?php echo($_GET['fname']); ?>"><br>`
+`<input type="text" id="firstname" name="fname" value="<?php echo($_GET['fname']); ?>"><br>`
 
-6. 
+PHP has a global string array called "$_GET" which stores all the name-value pairs sent in the request's query string. We coded our file to echo the value of the $_GET array indexed by the name `fname`. 
+
+7. Save your changes to the `index.php` file and refresh your browser.  
+8. Fill out both fields of the form and hit the "Submit" button again. Which of the two form fields remains populated when the response from the server comes back? Why?  
+9. Remove the query-string portion of the URL in your browser's address bar (leaving only `http://localhost/index.php`, for example) and press enter. Do you see an error message?  
+
+The code that we added in Step 5 simply assumed that the value $_GET['fname'] would be defined. This was not the case, resulting in an "Undefined array key" error.   
+
+10. Modify your PHP code so that $_GET['fname'] is only echoed if the variable is set.  
 

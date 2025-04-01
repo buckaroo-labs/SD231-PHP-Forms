@@ -19,7 +19,7 @@ PHP has a global string array called "$_GET" which stores all the name-value pai
 8. Fill out both fields of the form and hit the "Submit" button again. Which of the two form fields remains populated when the response from the server comes back? Why?  
 9. Remove the query-string portion of the URL in your browser's address bar (leaving only `http://localhost/index.php`, for example) and press enter. Do you see an error message?  
 
-The code that we added in Step 5 simply assumed that the value $_GET['fname'] would be defined. This was not the case, resulting in an "Undefined array key" error.   
+The code that we added in Step 5 simply assumed that the value `$_GET['fname']` would be defined. This was not the case, resulting in an `Undefined array key` error.   
 
 10. Modify your PHP code so that $_GET['fname'] is only echoed if the variable is set.  
 

@@ -21,7 +21,7 @@
   <input type="submit" value="Submit">
 </form> 
 
-<p>When you click the "Submit" button, the form data will be sent to this same page URL.</p>
+<p id="demo">When you click the "Submit" button, the form data will be sent to this same page URL.</p>
 
 
   </BODY>

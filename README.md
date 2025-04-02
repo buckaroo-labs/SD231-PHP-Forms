@@ -1,7 +1,7 @@
 # SD231-PHP-Forms
 Lab exercise
 
-PART 1 INSTRUCTIONS
+PART 1 INSTRUCTIONS  
 1-1. Clone this repository (anywhere on your computer) and then copy the `index.php` file in it to the document root of your PHP-enabled web server (e.g. `C:\Program Files\Ampps\www`).  
 1-2. Point your browser to this `index.php` file (`http://localhost/` should do it unless another file takes precedence or you are running the server on a non-default port).
 1-3. Take a look at the page source, using your browser's "View Page Source" feature.
@@ -29,7 +29,12 @@ Some errors cause a PHP page not to render, and in these cases a developer needs
 
 Step #1-10 is intentionally tricky. Yes, you could have just rewritten the paragraph on the server side rather than including a client-side script and making the client do that work. But the point being made here is that PHP can dynamically generate JavaScript as well as HTML. You are also going to need to figure out how to construct a string in PHP that contains quotation marks. PHP makes this relatively painless. If you need a string to contain double-quotation marks, you enclose it in single-quote marks, e.g.: `$string1='My name is "Ishmael."'`; If you need a string to contain single-quote marks, vice versa, e.g.: `$SQLString="SELECT id FROM students WHERE fname='Ishmael'"`;  
 
-PART 2 INSTRUCTIONS
+PART 2 INSTRUCTIONS  
 2-1. Change the form method from GET to POST (see the [reading assignment](https://www.w3schools.com/php/php_forms.asp)).  
+
+Note the changed behavior of the page when the form is submitted. Note also that the form data no longer appears in the address bar. If this were a search form, users would now be unable to bookmark their search terms. If, on the other hand, this were a form for more sensitive data, it might be best not to display it once submitted.  
+
+2-3. Change your PHP code to check for a POSTed `fname` value and to display it in the form instead of a GET variable.  
+
 2x. Submit your updated `index.php` file in Canvas.  
 

@@ -36,7 +36,7 @@ Note the changed behavior of the page when the form is submitted. Note also that
 
 2-3. Change your PHP code to check for a POSTed `fname` value and to display it in the form instead of a GET variable.  
 2-4. Put several single- and double-quotation marks and greater-than and less-than signs in the form fields and submit the form. Are you able to produce any unintended results? How do you think it might be possible for a malicious actor to take advantage of a web form that does not validate the input coming from its users?  What if the user-submitted data is made part of a search string that the web server sends to a database? What if someone were to craft a URL that included a malicious query string and sent this URL in a spam email to a web site's registered users? Would the effectiveness of such an attempt be different if the URL were processed as a GET request as opposed to a POST request?  
-2-5. Modify your PHP code to screen out problematic characters from the form input.  
+2-5. Modify your PHP code to screen out problematic characters from the form input using the htmlspecialchars() function.  
 2-6. Write a paragraph of 200-300 words answering some or all of the questions in step 2-4.  
 2-7. Put your short essay and your updated `index.php` into a single zip file and submit this file in Canvas.    
 
